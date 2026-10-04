@@ -1,0 +1,17 @@
+{
+  "name": "tanjiro-whatsapp-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small WhatsApp command bot named Tanjiro.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

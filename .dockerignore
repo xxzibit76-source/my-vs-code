@@ -1,0 +1,11 @@
+.git
+.env
+.env.*
+!.env.example
+node_modules
+.data
+.tanjiro_auth
+.tanjiro_settings.json
+.tanjiro_reminders.json
+.tanjiro_scores.json
+.tanjiro_events.json

@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: tanjiro
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    region: frankfurt
+    plan: 0.5c-512mb
+    healthCheckPath: /healthz
+    disk:
+      name: tanjiro-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: TANJIRO_DATA_DIR
+        value: /data
+      - key: WHATSAPP_PHONE_NUMBER
+        value: "233507488053"
+      - key: WHATSAPP_OWNER_NUMBER
+        value: "233507488053"
+      - key: OPENAI_MODEL
+        value: gpt-6-astra
+      - key: OPENAI_REASONING_EFFORT
+        value: max
+      - key: OPENAI_AUTOREPLY_MODEL
+        value: gpt-4o-mini
+      - key: TZ
+        value: UTC

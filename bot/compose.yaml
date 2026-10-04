@@ -1,0 +1,17 @@
+services:
+  tanjiro:
+    build: .
+    restart: unless-stopped
+    init: true
+    env_file:
+      - .env
+    environment:
+      TANJIRO_DATA_DIR: /data
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - tanjiro-data:/data
+
+volumes:
+  tanjiro-data:

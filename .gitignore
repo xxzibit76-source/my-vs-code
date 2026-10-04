@@ -1,0 +1,9 @@
+node_modules/
+.env
+.data/
+.tanjiro_auth/
+.tanjiro_settings.json
+.tanjiro_reminders.json
+.tanjiro_scores.json
+.tanjiro_events.json
+npm-debug.log*
